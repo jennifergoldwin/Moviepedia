@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0f0f0a</color>
+    <color name="colorPrimaryDark">#2e2e1f</color>
+    <color name="colorAccent">#ffff</color>
+
+
+    <color name="text_input_edit_text_stroke_border" ></color>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieDetailActivity"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/movie_detail_activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Movie Title"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+    <ImageView
+        android:id="@+id/movie_detail_activity_img"
+        android:layout_width="250dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:src="@drawable/notfound"
+        android:layout_margin="8dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="Year:"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/movie_detail_activity_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Movie Year"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="IMDB ID:"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/movie_detail_activity_imdbID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IMDBID"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </TableRow>
+
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/movie_detail_activity_button_save"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_style"
+        android:text="Save Movie"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/movie_detail_activity_button_delete"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Delete Movie"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_style"
+        android:layout_gravity="center"/>
+
+
+
+</LinearLayout>
